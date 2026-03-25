@@ -77,12 +77,17 @@ GridRAG/
 ### 1. Database Construction
 We provide a complete pipeline for database construction. 
 To build your own database, simply run the three optimization tasks using
-`main_vvc.py`, `main_ed.py`, `main_joint.py`
+`main_vvc.py`, `main_ed.py`, `main_joint.py`.
 We offer flexible parameter configurations: use the `--network` parameter to select
 the network topology and the `--scenario-id` parameter to specify the scenario.
 
+Download the following datasets from https://www.jianguoyun.com/p/DZKo0NQQgv7ODRjT9p8GIAA and place them in the `data/` directory:
+- `profiles`
+- `online_inf`
+
 > **Note**:  
-> - Make sure you have downloaded the processed scenario datasets and placed them in the correct directory.  
+> - You can customize your own input scenario by changing `online_inf`, as long as the format remains consistent.
+> - This is only a demo for running the pipeline, not the complete experimental data in this study. 
 
 The results will be saved in the `opt_results/` directory as `.json` files.
 
