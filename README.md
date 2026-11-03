@@ -12,11 +12,7 @@ capturing fine-grained semantic correlations.
 2) **Hybrid Retrieval** identifies feasible solution-oriented retrieval, 
 progressing from *Fast Recall* to *Precise Reranking* based on the learned
 joint embeddings. 
-3) **Similarity-Gated Adaptation** controls refinement intensity according to
-retrieval similarity. For zero-shot cases, an SDEdit-style diffusion
-procedure treats the retrieved solution as an initial state and applies
-adaptive diffusion with iterative refinement, forming an optimal attraction
-path toward a warm-start feasible region.
+3) **Confidence-Conditioned Diffusion Refinement** applies an SDEdit-initialized reverse diffusion process. The confidence $c$ determines the starting noise level. Physics guidance and device-level recovery produce a mixed-variable warm start for the final solver. No test-time fine-tuning is performed.
 
 ## 📁 Project Structure
 
