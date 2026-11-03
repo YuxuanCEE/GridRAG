@@ -4,7 +4,7 @@
 We propose **GridRAG**, the first retrieval-augmented framework for distribution network optimization. By integrating multi-modal representation learning, retrieval, and adaptive refinement, GridRAG enables fast and accurate solution generation across diverse and OOD scenarios.
 
 ## 📐 The Overall Framework
-![The overall framework of GridRAG](framework.png)
+![The overall framework of GridRAG](GridRAG_framework_1.1.png)
 
 Its architecture is built upon three key innovations: 
 1) **Grid2Vec** embeds scenarios and solutions into a joint representation space, 
